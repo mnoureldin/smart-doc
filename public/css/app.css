@@ -1,3 +1,11 @@
+.disclaimer, #view-change-button, #payload-column {
+  visibility:hidden;
+}
+
+#payload-column {
+  width: 0;
+}
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
