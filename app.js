@@ -34,7 +34,13 @@ var assistant = new AssistantV1({
 
 // Endpoint to be call from the client side
 app.post('/api/message', function (req, res) {
-  var workspace = process.env.WORKSPACE_ID || '<workspace-id>';
+  var workspace;
+  if(req.body.workspace.id === 1) {
+    workspace = process.env.WORKSPACE_ID1 || '<workspace-id>';
+  } else if(req.body.workspace.id === 2) {
+    workspace = process.env.WORKSPACE_ID2 || '<workspace-id>';
+  }
+    
   if (!workspace || workspace === '<workspace-id>') {
     return res.json({
       'output': {

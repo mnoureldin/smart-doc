@@ -29,6 +29,9 @@ var Api = (function() {
   function sendRequest(text, context) {
     // Build request payload
     var payloadToWatson = {};
+    payloadToWatson.workspace = {
+      id: window.workspace
+    };
     if (text) {
       payloadToWatson.input = {
         text: text
