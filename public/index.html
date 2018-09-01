@@ -2,20 +2,43 @@
 
 <head>
   <base href="/">
-  <title>Watson Assistant Chat App</title>
+  <title>Smart DOC (Disease Outbreak Control)</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta property="og:image" content="conversation.svg" />
-  <meta property="og:title" content="Conversation Chat Simple" />
-  <meta property="og:description" content="Sample application that shows how to use the Watson Assistant API to identify user intents"
-  />
+  <meta property="og:title" content="Smart DOC" />
+  <meta property="og:description" content="System for rabidly detecting and controlling epidemics"/>
   <link rel="shortcut icon" href="favicon.png" type="image/png">
   <link rel="stylesheet" href="css/app.css">
+
+  <style>
+  #menu-outer {
+    height: 84px;
+    background: url(images/bar-bg.jpg) repeat-x;
+  }
+  .table {
+    display: table;
+    margin: 0 auto;
+  }
+  ul#horizontal-list {
+    list-style: none;
+    padding-top: 20px;
+  }
+  ul#horizontal-list li {
+    display: inline;
+    padding: 20px;
+  }
+</style>
 </head>
 
 <body>
-  <a href="index1.html">Workspace One</a>
-  <a href="index2.html">Workspace Two</a>
+  <div id="menu-outer">
+    <div class="table">
+      <ul id="horizontal-list">
+        <li><a href="index1.html">Citizens Awareness and Guidance Chatbot</a></li>
+        <li><a href="index2.html">Health Sector Chatbot</a></li>
+      </ul>
+    </div>
+  </div>
 </body>
-
 </html>
