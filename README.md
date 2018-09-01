@@ -12,20 +12,20 @@ This is a challenging problem for many reasons. First the capacity for monitorin
 We propose Smart DOC (Disease Outbreak Control). It is a system that makes it easy to detect and control disease outbreaks by involving all stakeholders. Smart DOC architecture leverages the power of artificial intelligence by utilizing a set of IBM Watson services. IT help in connecting different stake holders to help controlling epidemics. Moreover, it educates and enhance end user awareness for how to deal with disease. 
 
 ## The system is composed of Six Watson services:
-### Three Chatbots using Watson Assistant:
-1.  ##### Travelers/Immigrants tracking Chatbot
-    to contact the travelers to/from countries affected by outbreaks.
-1.  ##### Citizens Awareness and Guidance Chatbot
-    to provide awareness of symptoms and precautions of diseases.
-1.  ##### Health Sector Chatbot
-    collects live data from hospitals and doctors.
-
+1.  ### Three Chatbots using Watson Assistant:
+    1.  ##### Travelers/Immigrants tracking Chatbot
+        to contact the travelers to/from countries affected by outbreaks.
+    1.  ##### Citizens Awareness and Guidance Chatbot
+        to provide awareness of symptoms and precautions of diseases.
+    1.  ##### Health Sector Chatbot
+        collects live data from hospitals and doctors.
 1.  ### Watson Knowledge Studio (WKS):
      Train a custom annotator to extract entities related to disease outbreaks, such as: symptoms, precautions, Incubation period, infected areas …etc.
 1.  ### Watson Discovery:
     Teach Discovery to apply the knowledge of unique entities and relations extracted with WKS.
 1.  ### Watson Studio:
     Train a machine learning model to classify if there is an expected risk of disease outbreak.
+1.  ### Watson Machine Learning
 1.  ### Geospatial Analytics:
     Monitor device locations and leverage real-time geospatial analytics to track when devices enter, leave or hang out in defined endangered or high-risk regions. Update the “Citizens Guidance chatbot” as the risk factor changes.
 
